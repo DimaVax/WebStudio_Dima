@@ -268,9 +268,11 @@ body {
     padding-bottom: 94px;
 }
 .card{
-    width: 370px;
+    
     height: 404px;
     border: 1px solid #EEEEEE;
+     flex-basis: calc((100% - 60px) / 3); 
+    outline: solid red;
 }
 .cards-list{
     display: flex;
