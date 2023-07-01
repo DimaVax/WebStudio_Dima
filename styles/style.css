@@ -104,14 +104,36 @@ body {
 }
 .pluses-item{
         width: 270px;
-        height: 90px;
         font-size: 14px;
+}
+.pluses-item::before{
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ps1::before{
+    background-image: url(/images/antenna.webp);
+}
+.ps2::before{
+    background-image: url(/images/clock.webp);
+}
+.ps3::before{
+    background-image: url(/images/diagram.webp);
+}
+.ps4::before{
+    background-image: url(/images/astronaut.png);
 }
 .pluses-list{
         display: flex;
         gap: 30px;
         padding-top: 94px;
         padding-bottom: 94px;
+        
 }
 .pluses-title {
     font-weight: 700;
