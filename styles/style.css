@@ -117,16 +117,16 @@ body {
     background-position: center;
 }
 .ps1::before{
-    background-image: url(/images/antenna.webp);
+    background-image: url(../images/antenna.webp);
 }
 .ps2::before{
-    background-image: url(/images/clock.webp);
+    background-image: url(../images/clock.webp);
 }
 .ps3::before{
-    background-image: url(/images/diagram.webp);
+    background-image: url(../images/diagram.webp);
 }
 .ps4::before{
-    background-image: url(/images/astronaut.png);
+    background-image: url(../images/astronaut.png);
 }
 .pluses-list{
         display: flex;
