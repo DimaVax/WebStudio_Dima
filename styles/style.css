@@ -116,16 +116,16 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
-.ps1::before{
+.pluses-item:nth-child(1)::before{
     background-image: url(../images/antenna.webp);
 }
-.ps2::before{
+.pluses-item:nth-child(2)::before{
     background-image: url(../images/clock.webp);
 }
-.ps3::before{
+.pluses-item:nth-child(3)::before{
     background-image: url(../images/diagram.webp);
 }
-.ps4::before{
+.pluses-item:nth-child(4)::before{
     background-image: url(../images/astronaut.png);
 }
 .pluses-list{
