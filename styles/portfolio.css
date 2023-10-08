@@ -41,10 +41,12 @@ body {
 .header-text:hover .header-icon1,
 .header-text:hover .header-icon2,
 .header-text:focus .header-icon1,
-.header-text:focus .header-icon2,
-.header-text:focus
-.header-text:hovers {
+.header-text:focus .header-icon2 {
   fill: #2196f3;
+  outline: 0;
+}
+.header-text:focus,
+.header-text:hover{
   color: #2196f3;
   outline: 0;
 }
