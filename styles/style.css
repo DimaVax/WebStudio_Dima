@@ -14,6 +14,12 @@ body {
   height: 80px;
 }
 /* хедер */
+.logo-span {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: black;
+}
 .header-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -21,18 +27,25 @@ body {
   line-height: 1.19;
   color: #2196f3;
 }
-.header-icon1{
+
+.header-icon1 {
   width: 16px;
   height: 12px;
   fill: #757575;
 }
-.header-icon2{
+.header-icon2 {
   width: 10px;
   height: 16px;
   fill: #757575;
 }
-.header-text:hover .header-icon1, .header-text:hover .header-icon2{
-  fill: #2196F3;
+.header-text:hover .header-icon1,
+.header-text:hover .header-icon2,
+.header-text:focus .header-icon1,
+.header-text:focus .header-icon2,
+.header-text:focus {
+  fill: #2196f3;
+  color: #2196f3;
+  outline: 0;
 }
 .contacts-list {
   display: flex;
@@ -56,8 +69,10 @@ body {
   color: #212121;
 }
 
-.header-link:hover {
+.header-link:hover,
+.header-link:focus {
   color: #2196f3;
+  outline: 0;
 }
 
 .header-text {
@@ -67,6 +82,7 @@ body {
   color: #757575;
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 /* Секція герой */
 
@@ -110,6 +126,12 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-top: 30px;
+}
+.hero-button:hover,
+.hero-button:focus {
+  outline: 0;
+  background-color: #fff;
+  color: #2196f3;
 }
 /* секція плюси */
 
@@ -182,26 +204,37 @@ body {
   margin-bottom: 50px;
 }
 /* секція команда */
-.team-icons{
+.team-icons {
   margin-top: 16px;
   display: flex;
   gap: 10px;
   justify-content: center;
-
 }
 .team-card {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+.team-link{
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  display: block;
   padding: 12px;
 }
-.team-icon{
+.team-icon {
   width: 20px;
   height: 20px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
 }
-.team-card:hover .team-icon{
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
   fill: #fff;
+  outline: 0;
+}
+.team-link:hover, .team-link:focus {
+  background-color: #2196f3;
+  outline: 0;
 }
 .team {
   padding-top: 94px;
@@ -219,7 +252,7 @@ body {
 .team-list {
   display: flex;
   gap: 30px;
-  display: flex;
+
 }
 
 .team-item {
@@ -229,9 +262,7 @@ body {
   width: 270px;
   padding-bottom: 30px;
 }
-.team-card:hover{
-    background-color: #2196F3;
-}
+
 .team-2ndtitle {
   text-align: center;
   letter-spacing: 0.03em;
@@ -271,18 +302,25 @@ body {
   height: 60px;
   fill: #afb1b8;
 }
-.clients-item:hover .clients-icon {
+.clients-link:hover .clients-icon, .clients-link:focus .clients-icon {
   fill: #2196f3;
+  outline: 0;
 }
-.clients-item:hover {
+.clients-link:hover, .clients-link:focus{
   border: 1px solid #2196f3;
+  outline: 0;
 }
-.clients-item {
-  width: 170px;
-  height: 92px;
+.clients-link {
+  width: 100%;
+  height: 100%;
+  display: block;
   border-radius: 4px;
   border: 1px solid #afb1b8;
   padding: 16px 32px;
+}
+.clients-item{
+  width: 170px;
+  height: 92px;
 }
 /* футер */
 
@@ -314,27 +352,21 @@ body {
   margin-bottom: 20px;
   display: block;
 }
+.footer-logo:focus{
+  outline: 0;
+}
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.header-item-link:hover {
-  color: #2196f3;
-}
 
-.header-text:hover {
-  color: #2196f3;
-}
 
-.logo-span {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: black;
-}
 .idk-container {
   padding: 20px 24px 20px 24px;
+}
+.footer-span {
+  color: #fff;
 }
 .footer-span {
   color: #fff;
@@ -343,21 +375,30 @@ body {
   display: flex;
   gap: 70px;
 }
-.footer-icon {
-  width: 20px;
-  height: 20px;
-  fill: white;
-}
 .footer-card {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ffffff1a;
+}
+.footer-link{
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  display: block;
   padding: 12px;
 }
-.footer-icons {
-  display: flex;
-  gap: 10px;
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+.footer-link:hover .footer-icon,
+.footer-link:focus .footer-icon {
+  outline: 0;
+}
+.footer-link:hover, .footer-link:focus {
+  background-color: #2196f3;
+  outline: 0;
 }
 .footer-suptitle {
   color: #fff;
@@ -368,6 +409,10 @@ body {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.footer-card:hover{
-    background-color: #2196F3;
+.footer-card:hover .footer-card:focus {
+  background-color: #2196f3;
+}
+.footer-icons{
+  display: flex;
+  gap: 10px;
 }
