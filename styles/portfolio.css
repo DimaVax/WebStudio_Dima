@@ -42,7 +42,8 @@ body {
 .header-text:hover .header-icon2,
 .header-text:focus .header-icon1,
 .header-text:focus .header-icon2,
-.header-text:focus {
+.header-text:focus
+.header-text:hovers {
   fill: #2196f3;
   color: #2196f3;
   outline: 0;
@@ -205,6 +206,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-color: #FFFFFF1A;
 }
 .footer-link{
   width: 100%;
