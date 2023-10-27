@@ -40,7 +40,7 @@
                     </a>
                 </li>
                 <li class="contacts-item">
-                    <a href="+38 096 111 11 11" class="header-text">
+                    <a href="tel:+380961111111" class="header-text">
                         <svg class="header-icon2">
                             <use href="./images/symbol-defs.svg#icon-phone"></use>
                         </svg>
@@ -54,7 +54,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-logo">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-button" type="button">Замовити послугу</button>
+                <button data-modal-open class="hero-button" type="button">Замовити послугу</button>
             </div>
         </section>
         <section class="pluses">
@@ -110,7 +110,7 @@
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-item">
-                        <img class="team-picture" width="270px" height="270px" src="images/team-card1.webp" alt="igor">
+                        <img class="team-picture" src="images/team-card1.webp" alt="igor">
                         <h3 class="team-2ndtitle">Ігор Дем'яненко</h3>
                         <p class="team-text">Product Designer</p>
                         <ul class="team-icons">
@@ -146,8 +146,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="team-item"><img class="team-picture" width="270px" height="270px"
-                            src="./images/team-card2.webp" alt="olga">
+                    <li class="team-item"><img class="team-picture" src="./images/team-card2.webp" alt="olga">
                         <h3 class="team-2ndtitle">Ольга Рєпіна</h3>
                         <p class="team-text">Frontend Developer</p>
                         <ul class="team-icons">
@@ -183,8 +182,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="team-item"><img class="team-picture" width="270px" height="270px"
-                            src="./images/team-card3.webp" alt="mikola">
+                    <li class="team-item"><img class="team-picture" src="./images/team-card3.webp" alt="mikola">
                         <h3 class="team-2ndtitle">Микола Тарасов</h3>
                         <p class="team-text">Marketing</p>
                         <ul class="team-icons">
@@ -220,8 +218,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="team-item"><img class="team-picture" width="270px" height="270px"
-                            src="./images/team-card4.webp" alt="misha">
+                    <li class="team-item"><img class="team-picture" src="./images/team-card4.webp" alt="misha">
                         <h3 class="team-2ndtitle">Михайло Єрмаков</h3>
                         <p class="team-text">UI Designer</p>
                         <ul class="team-icons">
@@ -322,7 +319,7 @@
                 </a>
                 <ul class="footer-list">
                     <li class="footer-item">
-                        <address class="footer-adr">м. Київ, пр-т Лесі Українки, 26<address>
+                        <address class="footer-adr">м. Київ, пр-т Лесі Українки, 26</address>
                     </li>
                     <li class="footer-item">info@devstudio.com</li>
                     <li class="footer-item">+38 096 111 11 11</li>
@@ -363,8 +360,69 @@
                     </li>
                 </ul>
             </div>
+            <form class="footer-form">
+                <label class="footer-label" for="footer-input">Підпишіться на розсилку</label>
+                <div class="footer-box2">
+                     <input id="footer-input" required placeholder="E-mail" type="email" class="footer-input">
+                <button type="submit" class="footer-button">Підписатися 
+                    <span>
+                        <svg class="form-icon">
+                            <use href="images/symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </span>
+                </button>
+                </div>
+            </form>
+
         </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="modal-form">
+                <ul class="modal-list">
+                    <li class="modal-item">
+                        <label class="modal-label" for="modal-name">Ім'я</label>
+                        <input class="modal-input" required id="modal-name" type="text">
+                        <svg class="modal-icon">
+                            <use href="./images/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                    </li>
+                    <li class="modal-item">
+                        <label class="modal-label" for="modal-phone">Телефон</label>
+                        <input class="modal-input" required id="modal-phone" type="tel">
+                        <svg class="modal-icon">
+                            <use href="./images/symbol-defs.svg#icon-phone-v2"></use>
+                        </svg>
+                    </li>
+                    <li class="modal-item">
+                        <label class="modal-label" for="modal-mail">Пошта</label>
+                        <input class="modal-input" required id="modal-mail" type="email">
+                        <svg class="modal-icon">
+                            <use href="./images/symbol-defs.svg#icon-mail-v2"></use>
+                        </svg>
+                    </li>
+                    <li class="modal-item">
+                        <label class="modal-label" for="modal-comment">Коментар</label>
+                        <input id="modal-comment" class="modal-comment" placeholder="Введіть текст" type="text">
+                    </li>
+                </ul>
+                <div class="modal-box">
+                    <input id="modal-agree" required type="checkbox">
+                    <label class="modal-agree" for="modal-agree">Погоджуюся з розсилкою та приймаю <span
+                            class="modal-span">Умови
+                            договору</span></label>
+                </div>
+                <button class="modal-button" type="submit">Відправити</button>
+            </form>
+            <button data-modal-close type="button" class="modal-close">
+                <svg class="close-icon">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
