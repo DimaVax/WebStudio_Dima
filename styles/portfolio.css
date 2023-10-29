@@ -27,7 +27,9 @@ body {
   line-height: 1.19;
   color: #2196f3;
 }
-
+.header{
+  border-bottom: 1px solid #ECECEC;
+}
 .header-icon1 {
   width: 16px;
   height: 12px;
@@ -314,5 +316,6 @@ body {
 .form-icon{
   fill: #fff;
 }
+
 
 
