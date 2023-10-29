@@ -522,7 +522,6 @@ body {
   margin-right: auto;
   margin-left: auto;
   padding: 40px;
-  position: relative;
   background-color: #fff;
   position: absolute;
   top: 50%;
@@ -548,16 +547,18 @@ body {
   line-height: normal;
   letter-spacing: 0.12px;
   display: block;
-  margin-bottom: 4px;
+  position: relative;
+  margin-bottom: 10px;
 }
 .modal-input {
   width: 448px;
   height: 40px;
   border-radius: 4px;
-  margin-bottom: 10px;
+  
   border: 1px solid rgba(33, 33, 33, 0.2);
   position: relative;
   padding-left: 42px;
+  margin-top: 4px;
 }
 .modal-comment {
   margin-bottom: 20px;
@@ -572,7 +573,7 @@ body {
 .modal-icon {
   position: absolute;
   left: 12px;
-  top: 29px;
+  top: 28px;
 }
 .modal-item {
   position: relative;
@@ -662,6 +663,7 @@ body {
   outline: 0;
   border: 1px solid #2196f3;
 }
-.modal-icon:hover{
+.modal-input:hover + .modal-icon, .modal-input:focus + .modal-icon {
   fill: #2196f3;
+  outline: 0;
 }
