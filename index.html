@@ -363,14 +363,14 @@
             <form class="footer-form">
                 <label class="footer-label" for="footer-input">Підпишіться на розсилку</label>
                 <div class="footer-box2">
-                     <input id="footer-input" required placeholder="E-mail" type="email" class="footer-input">
-                <button type="submit" class="footer-button">Підписатися 
-                    <span>
-                        <svg class="form-icon">
-                            <use href="images/symbol-defs.svg#icon-send"></use>
-                        </svg>
-                    </span>
-                </button>
+                    <input id="footer-input" required placeholder="E-mail" type="email" class="footer-input">
+                    <button type="submit" class="footer-button">Підписатися
+                        <span>
+                            <svg class="form-icon">
+                                <use href="images/symbol-defs.svg#icon-send"></use>
+                            </svg>
+                        </span>
+                    </button>
                 </div>
             </form>
 
@@ -384,29 +384,29 @@
                     <li class="modal-item">
                         <label class="modal-label" for="modal-name"><span>Ім'я</span>
                             <input class="modal-input" required id="modal-name" type="text">
-                        <svg class="modal-icon">
-                            <use href="./images/symbol-defs.svg#icon-person"></use>
-                        </svg>
+                            <svg class="modal-icon">
+                                <use href="./images/symbol-defs.svg#icon-person"></use>
+                            </svg>
                         </label>
-                        
+
                     </li>
                     <li class="modal-item">
-                        <label class="modal-label" for="modal-phone"><span>Телефон</span> 
-                        <input class="modal-input" required id="modal-phone" type="tel">
-                        <svg class="modal-icon">
-                            <use href="./images/symbol-defs.svg#icon-phone-v2"></use>
-                        </svg>
+                        <label class="modal-label" for="modal-phone"><span>Телефон</span>
+                            <input class="modal-input" required id="modal-phone" type="tel">
+                            <svg class="modal-icon">
+                                <use href="./images/symbol-defs.svg#icon-phone-v2"></use>
+                            </svg>
                         </label>
-                        
+
                     </li>
                     <li class="modal-item">
                         <label class="modal-label" for="modal-mail"><span> Пошта</span>
-                        <input class="modal-input" required id="modal-mail" type="email">
-                        <svg class="modal-icon">
-                            <use href="./images/symbol-defs.svg#icon-mail-v2"></use>
-                        </svg>
+                            <input class="modal-input" required id="modal-mail" type="email">
+                            <svg class="modal-icon">
+                                <use href="./images/symbol-defs.svg#icon-mail-v2"></use>
+                            </svg>
                         </label>
-                        
+
                     </li>
                     <li class="modal-item">
                         <label class="modal-label" for="modal-comment">Коментар</label>
@@ -414,10 +414,15 @@
                     </li>
                 </ul>
                 <div class="modal-box">
-                    <input id="modal-agree" required type="checkbox">
-                    <label class="modal-agree" for="modal-agree">Погоджуюся з розсилкою та приймаю <span
-                            class="modal-span">Умови
-                            договору</span></label>
+                    <input id="modal-agree" class="modal-checkbox" required type="checkbox">
+                    <span class="modal-custom">
+                        <svg class="custom-icon">
+                            <use href="./images/symbol-defs.svg#icon-mark"></use>
+                        </svg>
+                    </span>
+                    <label class="modal-agree" for="modal-agree">
+                        <span>Погоджуюся з розсилкою та приймаю <span class="modal-span">Умовии договору</span></span>
+                    </label>
                 </div>
                 <button class="modal-button" type="submit">Відправити</button>
             </form>
