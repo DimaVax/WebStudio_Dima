@@ -652,6 +652,8 @@ body {
   align-items: center;
   gap: 8px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .modal-close:hover .close-icon, .modal-close:focus .close-icon{
@@ -675,27 +677,29 @@ body {
   opacity: 0;
 }
 .modal-custom{
-  width: 16px;
-  height: 15px;
+  width: 14px;
+  height: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: 2px solid #212121;
-  border-radius: 2px;
+  outline: 1.5px solid #212121;
+  border-radius: 1px;
   position: absolute;
   top: 0;
   left: -2px;
+  background-color: #fff;
 }
 .modal-checkbox{
+  z-index: 2;
   opacity: 0;
 }
-
 .modal-checkbox:checked + .modal-custom > .custom-icon{
   opacity: 1;
 }
 .modal-checkbox:checked + .modal-custom{
   background-color: #2196f3;
   outline: 0;
-  width: 18px;
-  height: 17px;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
 }
