@@ -27,7 +27,17 @@ body {
   line-height: 1.19;
   color: #2196f3;
 }
-
+.header-after::after{
+  content: '';
+  display: block;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+  position: absolute;
+  left: -2px;
+  bottom: -25px;
+}
 .header-icon1 {
   width: 16px;
   height: 12px;
@@ -53,12 +63,15 @@ body {
 .contacts-list {
   display: flex;
   gap: 50px;
+  
 }
 .header-list {
   display: flex;
   margin-left: 93px;
   gap: 50px;
   align-items: center;
+  /* outline: solid green; */
+  position: relative;
 }
 .header-nav {
   display: flex;
@@ -73,7 +86,8 @@ body {
 }
 
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-studio {
   color: #2196f3;
   outline: 0;
 }
