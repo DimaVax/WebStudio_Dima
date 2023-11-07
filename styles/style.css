@@ -42,11 +42,17 @@ body {
   width: 16px;
   height: 12px;
   fill: #757575;
+  transition-property: fill;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon2 {
   width: 10px;
   height: 16px;
   fill: #757575;
+  transition-property: fill;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-text:hover .header-icon1,
 .header-text:hover .header-icon2,
@@ -83,6 +89,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color: #212121;
+  transition-property: color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
@@ -100,6 +109,9 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
+  transition-property: color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Секція герой */
 
@@ -143,6 +155,9 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-top: 30px;
+  transition-property: background-color, color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -256,11 +271,17 @@ body {
   height: 100%;
   display: block;
   padding: 12px;
+  transition-property: background-color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition-property: fill;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-link:hover .team-icon,
 .team-link:focus .team-icon {
@@ -337,6 +358,9 @@ body {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
+  transition-property: fill;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
@@ -355,6 +379,9 @@ body {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   padding: 16px 32px;
+  transition-property: border;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item {
   width: 170px;
@@ -424,11 +451,17 @@ body {
   height: 100%;
   display: block;
   padding: 12px;
+  transition-property: background-color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon {
   width: 20px;
   height: 20px;
   fill: #fff;
+  transition-property: fill;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover .footer-icon,
 .footer-link:focus .footer-icon {
@@ -458,6 +491,9 @@ body {
 .form-icon {
   width: 24px;
   height: 24px;
+  transition-property: fill;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-label {
   color: #fff;
@@ -477,6 +513,9 @@ body {
   height: 50px;
   padding-left: 16px;
   color: #ffffff;
+  transition-property: border;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input:hover, .footer-input:focus{
@@ -512,7 +551,9 @@ body {
   height: 50px;
   display: flex;
   align-items: center;
-
+  transition-property: background-color, color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-box2{
   display: flex;
@@ -527,6 +568,9 @@ body {
 .close-icon {
   width: 18px;
   height: 18px;
+  transition-property: fill;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   width: 528px;
@@ -568,11 +612,13 @@ body {
   width: 448px;
   height: 40px;
   border-radius: 4px;
-  
   border: 1px solid rgba(33, 33, 33, 0.2);
   position: relative;
   padding-left: 42px;
   margin-top: 4px;
+  transition-property: border;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-comment {
   margin-bottom: 20px;
@@ -630,6 +676,14 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition-property: color, background-color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:hover, .modal-button:focus{
+  background-color: #fff;
+  color: #2196F3;
+  outline: 0;
 }
 .modal-close {
   position: absolute;

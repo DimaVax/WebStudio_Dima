@@ -45,11 +45,17 @@ body {
   width: 16px;
   height: 12px;
   fill: #757575;
+  transition-property: fill;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon2 {
   width: 10px;
   height: 16px;
   fill: #757575;
+  transition-property: fill;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-text:hover .header-icon1,
 .header-text:hover .header-icon2,
@@ -66,6 +72,7 @@ body {
 .contacts-list {
   display: flex;
   gap: 50px;
+  
 }
 .header-list {
   display: flex;
@@ -85,8 +92,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color: #212121;
+  transition-property: color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .header-link:hover,
 .header-link:focus,
 .header-portfolio {
@@ -102,6 +111,9 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
+  transition-property: color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* кнопки */
 
@@ -119,6 +131,9 @@ body {
   height: 38px;
   border: none;
   border-radius: 4px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons {
   padding-top: 94px;
@@ -187,6 +202,9 @@ body {
   padding: 63px 24px;
   transform: translatey(-100%);
   cursor: pointer;
+  transition-property: transform;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-text {
   color: #fff;
@@ -259,11 +277,17 @@ body {
   height: 100%;
   display: block;
   padding: 12px;
+  transition-property: background-color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon {
   width: 20px;
   height: 20px;
   fill: #fff;
+  transition-property: fill;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover .footer-icon,
 .footer-link:focus .footer-icon {
@@ -293,6 +317,9 @@ body {
 .form-icon {
   width: 24px;
   height: 24px;
+  transition-property: fill;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-label {
   color: #fff;
@@ -312,21 +339,21 @@ body {
   height: 50px;
   padding-left: 16px;
   color: #ffffff;
+  transition-property: border;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-input:hover,
-.footer-input:focus {
+.footer-input:hover, .footer-input:focus{
   border: 1px solid #2196f3;
   outline: 0;
 }
-.footer-button:focus,
-.footer-button:hover {
+.footer-button:focus, .footer-button:hover{
   outline: 0;
   background-color: #fff;
   color: #2196f3;
 }
-.footer-button:focus .form-icon,
-.footer-button:hover .form-icon {
+.footer-button:focus .form-icon, .footer-button:hover .form-icon{
   fill: #2196f3;
 }
 .footer-input::placeholder {
@@ -350,12 +377,15 @@ body {
   height: 50px;
   display: flex;
   align-items: center;
+  transition-property: background-color, color;
+  transition-duration:  250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-box2 {
+.footer-box2{
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.form-icon {
+.form-icon{
   fill: #fff;
 }
