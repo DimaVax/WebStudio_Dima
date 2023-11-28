@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./styles/portfolio.css">
     <link rel="stylesheet" href="./styles/reset.css">
 </head>
@@ -54,7 +56,7 @@
     <main>
         <section class="buttons">
             <div class="container">
-                <ul class="buttons-list">
+                <ul class="animate__animated animate__fadeIn buttons-list">
                     <li class="buttons-item">
                         <button class="button-portfolio" type="button">Усі</button>
                     </li>
@@ -77,7 +79,7 @@
         <section class="cards">
             <div class="container">
                 <ul class="cards-list">
-                    <li class="card">
+                    <li data-aos-duration="1000" data-aos="fade-right" class="card">
                         <a href="#" class="cards-link">
                             <img src="./images_portfolio/1.webp" alt="tehnokryak">
                             <div class="cards-container">
@@ -92,7 +94,7 @@
                         </a>
                         
                     </li>
-                    <li class="card">
+                    <li data-aos-duration="1000" data-aos="fade-down" class="card">
                         <a href="#" class="cards-link">
                             <img src="./images_portfolio/2.webp" alt="Постер New Orlean vs Golden Star">
                             <div class="cards-container">
@@ -107,7 +109,7 @@
                         </a>
                         
                     </li>
-                    <li class="card">
+                    <li data-aos-duration="1000" data-aos="fade-left" class="card">
                         <a href="#" class="cards-link">
                             <img src="./images_portfolio/3.webp" alt="Ресторан Seafood">
                             <div class="cards-container">
@@ -121,7 +123,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card">
+                    <li data-aos-duration="1000" data-aos="fade-right" class="card">
                         <a href="#" class="cards-link">
                             <img src="./images_portfolio/4.webp" alt="Проєкт Prime">
                             <div class="cards-container">
@@ -137,7 +139,7 @@
 
                     </li>
 
-                    <li class="card">
+                    <li data-aos-duration="1000" data-aos="fade-down"  class="card">
                         <a href="#" class="cards-link">
                             <img src="./images_portfolio/5.webp" alt="Проєкт boxes">
                             <div class="cards-container">
@@ -151,7 +153,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card">
+                    <li data-aos-duration="1000" data-aos="fade-left" class="card">
                         <a href="#" class="cards-link">
                             <img src="./images_portfolio/6.webp" alt="Inspiration has no Borders">
                             <div class="cards-container">
@@ -165,7 +167,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card">
+                    <li data-aos-duration="1000" data-aos="fade-right" class="card">
                         <a href="#" class="cards-link">
                             <img src="./images_portfolio/7.webp" alt="Видання Limited Edition">
                             <div class="cards-container">
@@ -179,7 +181,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card">
+                    <li data-aos-duration="1000" data-aos="fade-up" class="card">
                         <a href="#" class="cards-link">
                             <img src="./images_portfolio/8.webp" alt="Проєкт LAB">
                             <div class="cards-container">
@@ -193,7 +195,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="card">
+                    <li data-aos-duration="1000" data-aos="fade-left" class="card">
                         <a href="#" class="cards-link">
                             <img src="./images_portfolio/9.webp" alt="Growing Business">
                             <div class="cards-container">
@@ -279,6 +281,10 @@
     
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
